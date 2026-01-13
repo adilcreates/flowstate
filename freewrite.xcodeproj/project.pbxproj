@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2800F7412DA1CEA0008FE5F9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2800F7402DA1CE9A008FE5F9 /* .gitignore */; };
+		7837A6492F16CB2900124958 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = F1000002GRDB000000000001 /* GRDB */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7837A6492F16CB2900124958 /* GRDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +128,7 @@
 			);
 			name = freewrite;
 			packageProductDependencies = (
+				F1000002GRDB000000000001 /* GRDB */,
 			);
 			productName = freewrite;
 			productReference = 2857D4702D5F8A8000EE1012 /* freewrite.app */;
@@ -209,6 +212,9 @@
 			);
 			mainGroup = 2857D4672D5F8A8000EE1012;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F1000001GRDB000000000001 /* XCRemoteSwiftPackageReference "GRDB" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2857D4712D5F8A8000EE1012 /* Products */;
 			projectDirPath = "";
@@ -618,6 +624,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F1000001GRDB000000000001 /* XCRemoteSwiftPackageReference "GRDB" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F1000002GRDB000000000001 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1000001GRDB000000000001 /* XCRemoteSwiftPackageReference "GRDB" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2857D4682D5F8A8000EE1012 /* Project object */;
 }
