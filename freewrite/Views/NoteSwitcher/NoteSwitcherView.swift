@@ -124,7 +124,7 @@ struct NoteSwitcherView: View {
             if !viewModel.searchQuery.isEmpty {
                 Text("Try a different search term")
                     .font(.system(size: 12))
-                    .foregroundColor(.tertiary)
+                    .foregroundColor(.secondary.opacity(0.7))
             }
         }
         .frame(maxWidth: .infinity)
@@ -163,7 +163,7 @@ struct NoteSwitcherRow: View {
                             .foregroundColor(.secondary)
 
                         Text("•")
-                            .foregroundColor(.tertiary)
+                            .foregroundColor(.gray)
 
                         Text("\(note.wordCount) words")
                             .font(.system(size: 12))
